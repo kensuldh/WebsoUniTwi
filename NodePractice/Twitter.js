@@ -16,8 +16,8 @@ console.log(keyword + 'を含むツイートを取得します。');
 wss.on('connection', function(ws) {
    twit.stream('statuses/filter', option, function(stream) {
        stream.on('data', function(data) {
-           //ws.send(data.text);
-           ws.send("abcdefghijklmnopqrs");
+           ws.send(data.text);
+           //ws.send("abcdefghijklmnopqrs");
            console.log(data);
        });
    });

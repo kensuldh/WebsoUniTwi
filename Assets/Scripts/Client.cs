@@ -299,6 +299,7 @@ public class Client : MonoBehaviour
         ws.OnMessage += (sender, e) => {
             Debug.Log("Data: " + e.Data);
             s = e.Data.ToCharArray();
+            Receive = e.Data;
             for (int i = 0; i < e.Data.Length; i++)
             {
                 list.Add(s[i]);     
