@@ -33,8 +33,6 @@ public class Client : MonoBehaviour
     public Rigidbody2D Aql;
     public Rigidbody2D Cyg;
     public Rigidbody2D Lyr;
-    private float VeloX, VeloY;
-    private float OriginX, OriginY;
     //private float OriginZ = 0.8f;
     private char[] s;
     List<char> list = new List<char>();
@@ -267,7 +265,8 @@ public class Client : MonoBehaviour
 
     void InitObject(Rigidbody2D rb)
     {
-        OriginX = Random.Range(5, 15);
+        float OriginX, OriginY;
+        OriginX = Random.Range(-15, 15);
         OriginY = Random.Range(8, 12);
         rb.velocity = new Vector2(0, 0);
         rb.MovePosition(new Vector2(OriginX, OriginY));
@@ -277,9 +276,18 @@ public class Client : MonoBehaviour
     void FlowObject(Rigidbody2D rb)
     {
         //Instantiate(rb);
-        VeloX = Random.Range(-20, -10);
-        VeloY = Random.Range(-20, -10);
-        rb.velocity = new Vector2(VeloX, VeloY);
+        float VeloX, VeloY;
+        if (rb.position.x < 0)
+        {
+            VeloX = Random.Range(20, 10);
+            VeloY = Random.Range(-20, -10);
+            rb.velocity = new Vector2(VeloX, VeloY);
+        }else
+        {
+            VeloX = Random.Range(-20, -10);
+            VeloY = Random.Range(-20, -10);
+            rb.velocity = new Vector2(VeloX, VeloY);
+        }
     }
 
     void OnApplicationQuit()
@@ -299,7 +307,7 @@ public class Client : MonoBehaviour
         ws.OnMessage += (sender, e) => {
             Debug.Log("Data: " + e.Data);
             s = e.Data.ToCharArray();
-            Receive = e.Data;
+            //Receive = e.Data;
             for (int i = 0; i < e.Data.Length; i++)
             {
                 list.Add(s[i]);     
