@@ -33,6 +33,7 @@ public class Client : MonoBehaviour
     public Rigidbody2D Aql;
     public Rigidbody2D Cyg;
     public Rigidbody2D Lyr;
+    public Rigidbody2D Ori;
     //private float OriginZ = 0.8f;
     private char[] s;
     List<char> list = new List<char>();
@@ -209,6 +210,14 @@ public class Client : MonoBehaviour
                     //InitObject(body[0]);
                     list.RemoveAt(0);
                     break;
+                case 't':
+                    X = Instantiate(Ori);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
                 default:
                     break;
             }
@@ -279,13 +288,13 @@ public class Client : MonoBehaviour
         float VeloX, VeloY;
         if (rb.position.x < 0)
         {
-            VeloX = Random.Range(20, 10);
-            VeloY = Random.Range(-20, -10);
+            VeloX = Random.Range(10, 5);
+            VeloY = Random.Range(-10, -5);
             rb.velocity = new Vector2(VeloX, VeloY);
         }else
         {
-            VeloX = Random.Range(-20, -10);
-            VeloY = Random.Range(-20, -10);
+            VeloX = Random.Range(-10, -5);
+            VeloY = Random.Range(-10, -5);
             rb.velocity = new Vector2(VeloX, VeloY);
         }
     }
