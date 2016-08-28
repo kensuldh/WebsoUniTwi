@@ -115,6 +115,131 @@ var items = [
         item: "ori",
         key: "t",
         keywords: ["オリオン座", "orion"]
+    },
+    {
+        item: "cma",
+        key: "u",
+        keywords: ["おおいぬ座", "大犬座",　"canis major"]
+    },
+    {
+        item: "cmi",
+        key: "v",
+        keywords: ["こいぬ座", "子犬座",　"canis minor"]
+    },
+    {
+        item: "tau",
+        key: "w",
+        keywords: ["おうし座", "牡牛座",　"taurus"]
+    },
+    {
+        item: "gem",
+        key: "x",
+        keywords: ["ふたご座", "双子座",　"gemini"]
+    },
+    {
+        item: "vir",
+        key: "y",
+        keywords: ["おとめ座", "乙女座",　"virgo"]
+    },
+    {
+        item: "cnc",
+        key: "z",
+        keywords: ["かに座", "蟹座",　"cancer"]
+    },
+    {
+        item: "leo",
+        key: "0",
+        keywords: ["しし座", "獅子座",　"leo"]
+    },
+    {
+        item: "sgr",
+        key: "1",
+        keywords: ["いて座", "射手座",　"sagittarius"]
+    },
+    {
+        item: "sco",
+        key: "2",
+        keywords: ["さそり座", "蠍座",　"scorpius"]
+    },
+    {
+        item: "lib",
+        key: "3",
+        keywords: ["てんびん座", "天秤座",　"libra"]
+    },
+    {
+        item: "ari",
+        key: "4",
+        keywords: ["おひつじ座", "牡羊座",　"aries"]
+    },
+    {
+        item: "aqr",
+        key: "5",
+        keywords: ["みずがめ座", "水瓶座",　"aquarius"]
+    },
+    {
+        item: "cap",
+        key: "6",
+        keywords: ["やぎ座", "山羊座",　"capricornus"]
+    },
+    {
+        item: "psc",
+        key: "7",
+        keywords: ["うお座", "魚座",　"pisces"]
+    },
+    {
+        item: "uma",
+        key: "8",
+        keywords: ["おおぐま座", "大熊座",　"ursa major"]
+    },
+    {
+        item: "umi",
+        key: "9",
+        keywords: ["こぐま座", "子熊座",　"ursa minor"]
+    },
+    {
+        item: "boo",
+        key: "A",
+        keywords: ["うしかい座", "牛飼い座",　"bootes"]
+    },
+    {
+        item: "cvn",
+        key: "B",
+        keywords: ["りょうけん座", "猟犬座",　"canes venatici"]
+    },
+    {
+        item: "aur",
+        key: "C",
+        keywords: ["ぎょしゃ座", "馭者座",　"auriga"]
+    },
+    {
+        item: "cas",
+        key: "D",
+        keywords: ["カシオペヤ座", "カシオペア座",　"cassiopeia"]
+    },
+    {
+        item: "peg",
+        key: "E",
+        keywords: ["ペガスス座", "ペガサス座",　"pegasus"]
+    },
+    {
+        item: "per",
+        key: "F",
+        keywords: ["ペルセウス座", "perseus"]
+    },
+    {
+        item: "her",
+        key: "G",
+        keywords: ["ヘルクレス座", "hercules"]
+    },
+    {
+        item: "gala",
+        key: "H",
+        keywords: ["アンドロメダ銀河", "銀河"]
+    },
+    {
+        item: "iss",
+        key: "I",
+        keywords: ["国際宇宙ステーション", "iss"]
     }
 ];
 

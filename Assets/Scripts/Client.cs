@@ -34,6 +34,31 @@ public class Client : MonoBehaviour
     public Rigidbody2D Cyg;
     public Rigidbody2D Lyr;
     public Rigidbody2D Ori;
+    public Rigidbody2D CMa;
+    public Rigidbody2D CMi;
+    public Rigidbody2D Tau;
+    public Rigidbody2D Gem;
+    public Rigidbody2D Vir;
+    public Rigidbody2D Cnc;
+    public Rigidbody2D Leo;
+    public Rigidbody2D Sgr;
+    public Rigidbody2D Sco;
+    public Rigidbody2D Lib;
+    public Rigidbody2D Ari;
+    public Rigidbody2D Aqr;
+    public Rigidbody2D Cap;
+    public Rigidbody2D Psc;
+    public Rigidbody2D UMa;
+    public Rigidbody2D UMi;
+    public Rigidbody2D Boo;
+    public Rigidbody2D CVn;
+    public Rigidbody2D Aur;
+    public Rigidbody2D Cas;
+    public Rigidbody2D Peg;
+    public Rigidbody2D Per;
+    public Rigidbody2D Her;
+    public Rigidbody2D Gala;
+    public Rigidbody2D ISS;
     //private float OriginZ = 0.8f;
     private char[] s;
     List<char> list = new List<char>();
@@ -218,6 +243,206 @@ public class Client : MonoBehaviour
                     //InitObject(body[0]);
                     list.RemoveAt(0);
                     break;
+                case 'u':
+                    X = Instantiate(CMa);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'v':
+                    X = Instantiate(CMi);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'w':
+                    X = Instantiate(Tau);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'x':
+                    X = Instantiate(Gem);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'y':
+                    X = Instantiate(Vir);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'z':
+                    X = Instantiate(Cnc);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '0':
+                    X = Instantiate(Leo);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '1':
+                    X = Instantiate(Sgr);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '2':
+                    X = Instantiate(Sco);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '3':
+                    X = Instantiate(Lib);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '4':
+                    X = Instantiate(Ari);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '5':
+                    X = Instantiate(Aqr);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '6':
+                    X = Instantiate(Cap);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '7':
+                    X = Instantiate(Psc);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '8':
+                    X = Instantiate(UMa);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case '9':
+                    X = Instantiate(CMi);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'A':
+                    X = Instantiate(Boo);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'B':
+                    X = Instantiate(CVn);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'C':
+                    X = Instantiate(Aur);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'D':
+                    X = Instantiate(Cas);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'E':
+                    X = Instantiate(Peg);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'F':
+                    X = Instantiate(Per);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'G':
+                    X = Instantiate(Her);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'H':
+                    X = Instantiate(Gala);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'I':
+                    X = Instantiate(ISS);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
                 default:
                     break;
             }
@@ -276,7 +501,8 @@ public class Client : MonoBehaviour
     {
         float OriginX, OriginY;
         OriginX = Random.Range(-15, 15);
-        OriginY = Random.Range(8, 12);
+        //OriginY = Random.Range(8, 12);
+        OriginY = 8;
         rb.velocity = new Vector2(0, 0);
         rb.MovePosition(new Vector2(OriginX, OriginY));
         //Destroy(rb);
@@ -286,15 +512,15 @@ public class Client : MonoBehaviour
     {
         //Instantiate(rb);
         float VeloX, VeloY;
-        if (rb.position.x < 0)
+        if (rb.position.x < 0.0f)
         {
-            VeloX = Random.Range(10, 5);
-            VeloY = Random.Range(-10, -5);
+            VeloX = Random.Range(2, 6);
+            VeloY = Random.Range(-10, -8);
             rb.velocity = new Vector2(VeloX, VeloY);
-        }else
+        }else if (rb.position.x > 0.0f)
         {
-            VeloX = Random.Range(-10, -5);
-            VeloY = Random.Range(-10, -5);
+            VeloX = Random.Range(-6, -2);
+            VeloY = Random.Range(-10, -8);
             rb.velocity = new Vector2(VeloX, VeloY);
         }
     }
