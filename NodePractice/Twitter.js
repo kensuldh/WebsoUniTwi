@@ -250,6 +250,26 @@ var items = [
         item: "kako",
         key: "K",
         keywords: ["過去", "かこ","past"]
+    },
+    {
+        item: "sumtri",
+        key: "qrs",
+        keywords: ["夏の大三角", "なつのだいさんかく"]
+    },
+    {
+        item: "wintri",
+        key: "utv",
+        keywords: ["冬の大三角", "ふゆのだいさんかく"]
+    },
+    {
+        item: "wintri",
+        key: "utvwxC",
+        keywords: ["冬のダイヤモンド", "冬のダイアモンド", "ふゆのだいあもんど", "ふゆのだいやもんど"]
+    },
+    {
+        item: "heart",
+        key: "LLLLLLLLLL",
+        keywords: ["プラネカフェ", "ぷらねかふぇ"]
     }
 ];
 
