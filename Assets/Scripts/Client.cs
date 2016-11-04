@@ -483,7 +483,13 @@ public class Client : MonoBehaviour
             body.RemoveAt(0);            
         }
         for (int i = 0; i < body2.Count; i++) {
-            if (body2[i].position.x < -15 || body2[i].position.y < -5)
+            if (body2[i].name == "Heart(Clone)") {
+                if (body2[i].position.x < -15 || body2[i].position.y > 12)
+                {
+                    Destroy(body2[i].gameObject);
+                    body2.RemoveAt(i);
+                }
+            } else if (body2[i].position.x < -15 || body2[i].position.y < -5)
             {
                 Destroy(body2[i].gameObject);
                 body2.RemoveAt(i);
