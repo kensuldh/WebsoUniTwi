@@ -61,6 +61,7 @@ public class Client : MonoBehaviour
     public Rigidbody2D ISS;
     public Rigidbody2D Come;
     public Rigidbody2D Kako;
+    public Rigidbody2D Heart;
     public Text TweetCount;
     //private float OriginZ = 0.8f;
     int TweetNum = 0;
@@ -463,6 +464,14 @@ public class Client : MonoBehaviour
                     //InitObject(body[0]);
                     list.RemoveAt(0);
                     break;
+                case 'L':
+                    X = Instantiate(Heart);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
                 default:
                     break;
             }
@@ -533,6 +542,12 @@ public class Client : MonoBehaviour
             //OriginY = Random.Range(8, 12);
             rb.velocity = new Vector2(0, 0);
             rb.MovePosition(new Vector2(OriginX, OriginY));
+        }else if (rb.name == "Heart(Clone)")
+        {
+            OriginX = Random.Range(0, 5);
+            OriginY = -12;
+            rb.velocity = new Vector2(0, 0);
+            rb.MovePosition(new Vector2(OriginX, OriginY));
         }
         //Destroy(rb);
         FlowObject(rb);
@@ -548,6 +563,12 @@ public class Client : MonoBehaviour
         {
             VeloX = Random.Range(-8, -6);
             VeloY = Random.Range(-15, -10);
+            rb.velocity = new Vector2(VeloX, VeloY);
+        }
+        else if (rb.name == "Heart(Clone)")
+        {
+            VeloX = Random.Range(-4, 4);
+            VeloY = Random.Range(8, 4);
             rb.velocity = new Vector2(VeloX, VeloY);
         }
         else if (rb.position.x < 0.0f)

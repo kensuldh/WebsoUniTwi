@@ -16,7 +16,7 @@ Platform assembly: C:\Users\kensuke\Documents\Person\Play\Twitter_Data\Managed\U
 Loading C:\Users\kensuke\Documents\Person\Play\Twitter_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\kensuke\Documents\Person\Play\Twitter_Data\Managed\websocket-sharp.dll (this message is harmless)
 Loading C:\Users\kensuke\Documents\Person\Play\Twitter_Data\Managed\websocket-sharp.dll into Unity Child Domain
-- Completed reload, in  0.077 seconds
+- Completed reload, in  0.070 seconds
 Platform assembly: C:\Users\kensuke\Documents\Person\Play\Twitter_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\kensuke\Documents\Person\Play\Twitter_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
