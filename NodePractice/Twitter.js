@@ -19,7 +19,7 @@ var items = [
     {
         obj: "star",
         key: "a",
-        keywords: ["星", "star", "stars", "stella"]
+        keywords: ["星","ほし", "star", "stars", "stella"]
     },
     {
         item: "univ",
@@ -34,17 +34,17 @@ var items = [
     {
         item: "sun",
         key: "d",
-        keywords: ["太陽", "sun"]
+        keywords: ["太陽","たいよう", "sun"]
     },
     {
         item: "cres",
         key: "e",
-        keywords: ["三日月", "mikazuki","Crescent Moon"]
+        keywords: ["三日月","みかづき", "mikazuki","Crescent Moon"]
     },
     {
         item: "full",
         key: "f",
-        keywords: ["満月","full moon","moon"]
+        keywords: ["満月","月","つき","full moon","moon"]
     },
     {
         item: "earth",
@@ -54,32 +54,32 @@ var items = [
     {
         item: "sat",
         key: "h",
-        keywords: ["土星", "saturn", "ドーナッツ", "どーなっつ","donuts"]
+        keywords: ["土星", "どせい","saturn", "ドーナッツ", "どーなっつ","donuts"]
     },
     {
         item: "proj",
         key: "i",
-        keywords: ["投影機君", "投影機", "projector"]
+        keywords: ["投影機", "とうえいき","projector"]
     },
     {
         item: "venus",
         key: "j",
-        keywords: ["金星", "venus"]
+        keywords: ["金星","きんせい", "venus"]
     },
     {
         item: "uranu",
         key: "k",
-        keywords: ["天王星", "uranus"]
+        keywords: ["天王星","てんのうせい", "uranus"]
     },
     {
         item: "plu",
         key: "l",
-        keywords: ["冥王星", "pluto"]
+        keywords: ["冥王星", "めいおうせい","pluto"]
     },
     {
         item: "nept",
         key: "m",
-        keywords: ["海王星", "neptune"]
+        keywords: ["海王星","かいおうせい", "neptune"]
     },
     {
         item: "mercu",
@@ -89,157 +89,167 @@ var items = [
     {
         item: "mars",
         key: "o",
-        keywords: ["火星", "mars"]
+        keywords: ["火星","かせい", "mars"]
     },
     {
         item: "jupi",
         key: "p",
-        keywords: ["木星", "jupiter"]
+        keywords: ["木星","もくせい", "jupiter"]
     },
     {
         item: "aql",
         key: "q",
-        keywords: ["わし座", "鷲座", "aquila"]
+        keywords: ["わし", "鷲", "aquila"]
     },
     {
         item: "cyg",
         key: "r",
-        keywords: ["はくちょう座", "白鳥座", "cygnus"]
+        keywords: ["はくちょう", "白鳥", "cygnus"]
     },
     {
         item: "lyr",
         key: "s",
-        keywords: ["こと座", "琴座", "lyra"]
+        keywords: ["こと", "琴", "lyra"]
     },
     {
         item: "ori",
         key: "t",
-        keywords: ["オリオン座", "orion"]
+        keywords: ["オリオン","おりおん" ,"orion"]
     },
     {
         item: "cma",
         key: "u",
-        keywords: ["おおいぬ座", "大犬座",　"canis major"]
+        keywords: ["おおいぬ", "大犬",　"canis major"]
     },
     {
         item: "cmi",
         key: "v",
-        keywords: ["こいぬ座", "子犬座",　"canis minor"]
+        keywords: ["こいぬ", "子犬",　"canis minor"]
     },
     {
         item: "tau",
         key: "w",
-        keywords: ["おうし座", "牡牛座",　"taurus"]
+        keywords: ["おうし", "牡牛",　"taurus"]
     },
     {
         item: "gem",
         key: "x",
-        keywords: ["ふたご座", "双子座",　"gemini"]
+        keywords: ["ふたご", "双子",　"gemini"]
     },
     {
         item: "vir",
         key: "y",
-        keywords: ["おとめ座", "乙女座",　"virgo"]
+        keywords: ["おとめ", "乙女",　"virgo"]
     },
     {
         item: "cnc",
         key: "z",
-        keywords: ["かに座", "蟹座",　"cancer"]
+        keywords: ["かに", "蟹",　"cancer"]
     },
     {
         item: "leo",
         key: "0",
-        keywords: ["しし座", "獅子座",　"leo"]
+        keywords: ["しし", "獅子",　"leo"]
     },
     {
         item: "sgr",
         key: "1",
-        keywords: ["いて座", "射手座",　"sagittarius"]
+        keywords: ["いて", "射手",　"sagittarius"]
     },
     {
         item: "sco",
         key: "2",
-        keywords: ["さそり座", "蠍座",　"scorpius"]
+        keywords: ["さそり", "蠍",　"scorpius"]
     },
     {
         item: "lib",
         key: "3",
-        keywords: ["てんびん座", "天秤座",　"libra"]
+        keywords: ["てんびん", "天秤",　"libra"]
     },
     {
         item: "ari",
         key: "4",
-        keywords: ["おひつじ座", "牡羊座",　"aries"]
+        keywords: ["おひつじ", "牡羊",　"aries"]
     },
     {
         item: "aqr",
         key: "5",
-        keywords: ["みずがめ座", "水瓶座",　"aquarius"]
+        keywords: ["みずがめ", "水瓶",　"aquarius"]
     },
     {
         item: "cap",
         key: "6",
-        keywords: ["やぎ座", "山羊座",　"capricornus"]
+        keywords: ["やぎ", "山羊",　"capricornus"]
     },
     {
         item: "psc",
         key: "7",
-        keywords: ["うお座", "魚座",　"pisces"]
+        keywords: ["うお", "魚",　"pisces"]
     },
     {
         item: "uma",
         key: "8",
-        keywords: ["おおぐま座", "大熊座",　"ursa major"]
+        keywords: ["おおぐま", "大熊",　"ursa major"]
     },
     {
         item: "umi",
         key: "9",
-        keywords: ["こぐま座", "子熊座",　"ursa minor"]
+        keywords: ["こぐま", "子熊",　"ursa minor"]
     },
     {
         item: "boo",
         key: "A",
-        keywords: ["うしかい座", "牛飼い座",　"bootes"]
+        keywords: ["うしかい", "牛飼い",　"bootes"]
     },
     {
         item: "cvn",
         key: "B",
-        keywords: ["りょうけん座", "猟犬座",　"canes venatici"]
+        keywords: ["りょうけん", "猟犬",　"canes venatici"]
     },
     {
         item: "aur",
         key: "C",
-        keywords: ["ぎょしゃ座", "馭者座",　"auriga"]
+        keywords: ["ぎょしゃ", "馭者",　"auriga"]
     },
     {
         item: "cas",
         key: "D",
-        keywords: ["カシオペヤ座", "カシオペア座",　"cassiopeia"]
+        keywords: ["カシオペヤ", "カシオペア","かしおぺあ","かしおぺや",　"cassiopeia"]
     },
     {
         item: "peg",
         key: "E",
-        keywords: ["ペガスス座", "ペガサス座",　"pegasus"]
+        keywords: ["ペガスス", "ペガサス","ぺがすす","ぺがさす",　"pegasus"]
     },
     {
         item: "per",
         key: "F",
-        keywords: ["ペルセウス座", "perseus"]
+        keywords: ["ペルセウス","ぺるせうす", "perseus"]
     },
     {
         item: "her",
         key: "G",
-        keywords: ["ヘルクレス座", "hercules"]
+        keywords: ["ヘルクレス", "ヘラクレス","へるくれす","へらくれす", "hercules"]
     },
     {
         item: "gala",
         key: "H",
-        keywords: ["アンドロメダ銀河", "銀河"]
+        keywords: ["銀河", "アンドロメダ","あんどろめだ"]
     },
     {
         item: "iss",
         key: "I",
-        keywords: ["国際宇宙ステーション", "iss"]
+        keywords: ["国際宇宙ステーション", "こくさいうちゅうすてーしょん","iss"]
+    },
+    {
+        item: "come",
+        key: "J",
+        keywords: ["彗星", "すいせい","comet"]
+    },
+    {
+        item: "kako",
+        key: "K",
+        keywords: ["過去", "かこ","past"]
     }
 ];
 
@@ -262,6 +272,7 @@ makeSend = function(text){
     var str = "";
     if(!text) return "";
     // console.log(text);
+    text = text.toLowerCase();
     for(var i = 0; i < lenArray.length;i++){
         // console.log(lenArray[i]);
         var n = text.length;

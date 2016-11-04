@@ -59,7 +59,11 @@ public class Client : MonoBehaviour
     public Rigidbody2D Her;
     public Rigidbody2D Gala;
     public Rigidbody2D ISS;
+    public Rigidbody2D Come;
+    public Rigidbody2D Kako;
+    public Text TweetCount;
     //private float OriginZ = 0.8f;
+    int TweetNum = 0;
     private char[] s;
     List<char> list = new List<char>();
     List<Rigidbody2D> body = new List<Rigidbody2D>();
@@ -443,13 +447,29 @@ public class Client : MonoBehaviour
                     //InitObject(body[0]);
                     list.RemoveAt(0);
                     break;
+                case 'J':
+                    X = Instantiate(Come);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
+                case 'K':
+                    X = Instantiate(Kako);
+                    InitObject(X);
+                    body.Add(X);
+                    //body.Add(Instantiate(Tsukuba));
+                    //InitObject(body[0]);
+                    list.RemoveAt(0);
+                    break;
                 default:
                     break;
             }
         }
         for (int i = 0; i < body.Count; i++)
         {
-            FlowObject(body[0]);
+            //FlowObject(body[0]);
             body2.Add(body[0]);
             body.RemoveAt(0);            
         }
@@ -499,28 +519,46 @@ public class Client : MonoBehaviour
 
     void InitObject(Rigidbody2D rb)
     {
+        TweetNum++;
+        TweetCount.text = "流れた数：" + TweetNum.ToString();
         float OriginX, OriginY;
-        OriginX = Random.Range(-15, 15);
+        OriginX = Random.Range(-5, 5);
         //OriginY = Random.Range(8, 12);
-        OriginY = 8;
+        OriginY = 12;
         rb.velocity = new Vector2(0, 0);
         rb.MovePosition(new Vector2(OriginX, OriginY));
+        if (rb.name == "Comet(Clone)")
+        {
+            OriginX = Random.Range(0, 5);
+            //OriginY = Random.Range(8, 12);
+            rb.velocity = new Vector2(0, 0);
+            rb.MovePosition(new Vector2(OriginX, OriginY));
+        }
         //Destroy(rb);
+        FlowObject(rb);
     }
 
     void FlowObject(Rigidbody2D rb)
     {
         //Instantiate(rb);
         float VeloX, VeloY;
-        if (rb.position.x < 0.0f)
+        Debug.Log(rb.position.x);
+
+        if (rb.name == "Comet(Clone)")
         {
-            VeloX = Random.Range(2, 6);
-            VeloY = Random.Range(-10, -8);
+            VeloX = Random.Range(-8, -6);
+            VeloY = Random.Range(-15, -10);
             rb.velocity = new Vector2(VeloX, VeloY);
-        }else if (rb.position.x > 0.0f)
+        }
+        else if (rb.position.x < 0.0f)
         {
-            VeloX = Random.Range(-6, -2);
-            VeloY = Random.Range(-10, -8);
+            VeloX = Random.Range(-4, 4);
+            VeloY = Random.Range(-8, -4);
+            rb.velocity = new Vector2(VeloX, VeloY);
+        }else
+        {
+            VeloX = Random.Range(-4, 4);
+            VeloY = Random.Range(-8, -4);
             rb.velocity = new Vector2(VeloX, VeloY);
         }
     }
